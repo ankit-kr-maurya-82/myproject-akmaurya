@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit Kumar Maurya – My Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="resume.css" />
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold text-white">Ankit Kumar Maurya</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero-section" data-aos="fade-up">
+    <h2>Hi, I'm Ankit 👋</h2>
+    <p>A passionate Web Developer skilled in HTML, CSS, JavaScript, and modern frameworks.</p>
+    <img src="Ankit2.jpg" alt="Ankit" />
+    <a href="#contact" class="btn-primary mt-6">Contact Me</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section" data-aos="fade-right">
+    <h3>About Me</h3>
+    <p>
+      I'm a web developer with a diploma in Web Development and Design. I enjoy creating clean,
+      user-friendly, and performant web experiences.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h3>Projects</h3>
+    <div class="grid md:grid-cols-2 gap-8 mt-8">
+      <div class="card">
+        <h4>FoodMenu</h4>
+        <p>A command-line based interactive food ordering system using Python.</p>
+        <a href="https://github.com/ankit-kr-maurya-82/Python-Projects/blob/main/foodMenu.py" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="card">
+        <h4>SiTyping</h4>
+        <p>A fast, elegant, and distraction-free typing website built with React, Tailwind, and Framer Motion.</p>
+        <a href="https://github.com/ankit-kr-maurya-82/SiTyping" target="_blank">View GitHub →</a>
+        <a href="https://si-typing01.vercel.app/" target="_blank">Live Demo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section" data-aos="fade-left">
+    <h3>Skills</h3>
+    <ul class="skills-list">
+      <li>HTML, CSS, JavaScript</li>
+      <li>Python, C, MySQL</li>
+      <li>React.js, Node.js, Tailwind</li>
+      <li>Version Control (Git)</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section" data-aos="fade-up">
+    <h3>Contact</h3>
+    <p class="">Connect with me through social links below 👇</p>
+    <div class="flex gap-6 justify-center mt-6">
+      <a href="https://github.com/Ankit-Kumar-Maurya2430" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/ankit-kumar-maurya-ba4390334/" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/_.ankit._82/" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ankit Kumar Maurya. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS + Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="resume.js"></script>
+</body>
+</html>
