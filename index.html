@@ -1,106 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ankit Kumar Maurya – My Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankit – Modern Tech UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="resume.css" />
-</head>
-
-<body>
-  <!-- Custom Cursor -->
-  <div id="cursor"></div>
-
-  <!-- Header -->
-  <header>
-    <div class="container mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-xl font-bold text-white">Ankit Kumar Maurya</h1>
-      <nav class="space-x-6 hidden md:block">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero-section" data-aos="fade-up">
-    <h2>Hi, I'm Ankit Kumar Maurya 👋</h2>
-    <p>A passionate Web Developer skilled in HTML, CSS, JavaScript, and modern frameworks.</p>
-    <img src="Ankit2.jpg" alt="Ankit" />
-    <a href="#contact" class="btn-primary mt-6">Contact Me</a>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section" data-aos="fade-right">
-    <h3>About Me</h3>
-    <p>
-      I'm a web developer with a diploma in Web Development and Design. I enjoy creating clean,
-      user-friendly, and performant web experiences.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" data-aos="fade-up">
-    <h3>Projects</h3>
-    <div class="grid md:grid-cols-2 gap-8 mt-8">
-      <div class="card">
-        <h4>FoodMenu</h4>
-        <p>A command-line based interactive food ordering system using Python.</p>
-        <a href="https://github.com/ankit-kr-maurya-82/Python-Projects/blob/main/foodMenu.py" target="_blank">View on GitHub →</a>
+  <body class="bg-[#0d1117] text-gray-200">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 w-full bg-[#0d1117]/80 backdrop-blur-md border-b border-white/5 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <h1 class="text-2xl font-bold text-blue-400">Ankit</h1>
+        <div class="hidden md:flex space-x-10 font-medium">
+          <a href="#home" class="hover:text-blue-400 transition">Home</a>
+          <a href="#projects" class="hover:text-blue-400 transition"
+            >Projects</a
+          >
+          <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+          <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
       </div>
+    </nav>
 
-      <div class="card">
-        <h4>SiTyping</h4>
-        <p>A fast, elegant, and distraction-free typing website built with React, Tailwind, and Framer Motion.</p>
-        <a href="https://github.com/ankit-kr-maurya-82/SiTyping" target="_blank">View GitHub →</a>
-        <a href="https://si-typing01.vercel.app/" target="_blank">Live Demo →</a>
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20"
+    >
+      <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight">
+        Hi, I'm <span class="text-blue-400">Ankit Maurya</span>
+      </h2>
+      <p class="max-w-xl mt-6 text-gray-400 text-lg">
+        Web Developer focused on building fast, scalable, and modern web
+        applications.
+      </p>
+
+      <img
+        src="Ankit2.jpg"
+        class="w-48 h-48 mx-auto mt-10 rounded-full shadow-2xl border-2 border-blue-500/50"
+      />
+
+      <a
+        href="#contact"
+        class="mt-10 px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg text-lg font-semibold transition"
+        >Get in Touch</a
+      >
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-28">
+      <h3 class="text-4xl font-bold text-center text-blue-400">Projects</h3>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+        <!-- Card 1 -->
+        <div
+          class="bg-[#161b22] p-6 rounded-xl border border-white/5 hover:border-blue-500/40 transition hover:-translate-y-1"
+        >
+          <h4 class="text-xl font-semibold">FoodMenu</h4>
+          <p class="mt-3 text-gray-400">
+            CLI-based interactive food ordering system built with Python.
+          </p>
+          <a href="#" class="text-blue-400 mt-4 block hover:underline"
+            >GitHub →</a
+          >
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-[#161b22] p-6 rounded-xl border border-white/5 hover:border-blue-500/40 transition hover:-translate-y-1"
+        >
+          <h4 class="text-xl font-semibold">SiTyping</h4>
+          <p class="mt-3 text-gray-400">
+            Fast & minimal typing test website built with React + Tailwind.
+          </p>
+          <div class="mt-4 space-x-4">
+            <a href="#" class="text-blue-400 hover:underline">GitHub →</a>
+            <a href="#" class="text-blue-400 hover:underline">Demo →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-[#161b22] p-6 rounded-xl border border-white/5 hover:border-blue-500/40 transition hover:-translate-y-1"
+        >
+          <h4 class="text-xl font-semibold">ColorLab </h4>
+          <p class="mt-3 text-gray-400">
+         Tech-themed premium Color layout with micro-animations.
+          </p>
+          <a href="https://github.com/ankit-kr-maurya-82/ColorLab" class="text-blue-400 mt-4 block hover:underline"
+            >View →</a
+          >
+        </div>
+        
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section" data-aos="fade-left">
-    <h3>Skills</h3>
-    <ul class="skills-list">
-      <li>HTML, CSS, JavaScript</li>
-      <li>Python, C, MySQL</li>
-      <li>React.js, Node.js, Tailwind</li>
-      <li>Version Control (Git)</li>
-      <li>Responsive Design</li>
-    </ul>
-  </section>
+    <!-- Skills -->
+    <section id="skills" class="max-w-7xl mx-auto px-6 py-24">
+      <h3 class="text-4xl font-bold text-center text-blue-400">Skills</h3>
 
-  <!-- Contact -->
-  <section id="contact" class="section" data-aos="fade-up">
-    <h3>Contact</h3>
-    <p class="">Connect with me through social links below 👇</p>
-    <div class="flex gap-6 justify-center mt-6">
-      <a href="https://github.com/Ankit-Kumar-Maurya2430" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/ankit-kumar-maurya-ba4390334/" target="_blank">LinkedIn</a>
-      <a href="https://www.instagram.com/_.ankit._82/" target="_blank">Instagram</a>
-    </div>
-  </section>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-14 text-center"
+      >
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          HTML
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          CSS
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          JavaScript
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          Python
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          React
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          Node.js
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          MySQL
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          Tailwind
+        </div>
+        <div class="bg-[#161b22] py-4 rounded-lg border border-white/5">
+          Git
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Ankit Kumar Maurya. All rights reserved.</p>
-  </footer>
+    <!-- Contact -->
+    <section id="contact" class="text-center px-6 py-24">
+      <h3 class="text-4xl font-bold text-blue-400">Contact</h3>
+      <p class="mt-4 text-gray-400">Let’s collaborate on something amazing!</p>
 
-  <!-- AOS + Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="resume.js"></script>
-</body>
+      <div class="flex justify-center gap-10 mt-10 text-xl">
+        <a href="#" class="hover:text-blue-400 transition">GitHub</a>
+        <a href="#" class="hover:text-blue-400 transition">LinkedIn</a>
+        <a href="#" class="hover:text-blue-400 transition">Instagram</a>
+      </div>
+    </section>
+
+    <footer class="text-center py-6 text-gray-500 border-t border-white/5">
+      © 2025 Ankit. All Rights Reserved.
+    </footer>
+  </body>
 </html>
